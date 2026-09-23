@@ -9,6 +9,10 @@ let value: any = [];
 // It helps in Type narrowing.
 let value2: unknown = [];
 
+// non-nullish value => '{}'
+// {} essentially means: Any value that is not null or undefined.
+let user: {} = "Lakshay";
+
 // string
 let userName: string = "Lakshay";
 
@@ -45,3 +49,12 @@ userMarks = 92;
 
 // Literal Types
 let userCurDirctionMove: "left" | "right" | "up" | "down" = "left";
+
+// Record
+// Create an object/dictionary where the keys are KeyType and the values are ValueType.
+// Record<KeyType, ValueType>
+let users: Record<string, number> = {
+  Lakshay: 1,
+  Luckshay: 2,
+  L: 3,
+};
