@@ -46,8 +46,15 @@ function mutliply(a: number, b: number): number {
 }
 
 // returns void
+// The function finishes, but doesn't return a useful value.
 function printMsg(msg: string): void {
   console.log(msg);
+}
+
+// never
+// A value that can never exist because the operation never successfully produces a value.
+function throwError(): never {
+  throw new Error("Something went wrong");
 }
 
 // Function Type
