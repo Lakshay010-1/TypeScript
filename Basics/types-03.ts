@@ -1,7 +1,7 @@
 // Type Assertions
 // Assertion tells typescript to treat the value as declared
 const formNameInput = document.getElementById("username") as HTMLInputElement;
-let userName: string = formNameInput.value as string;
+let formUserName: string = formNameInput.value as string;
 
 // Non-Null Assertion => '!'
 // Tells typescript the value is definitely not null or undefined
