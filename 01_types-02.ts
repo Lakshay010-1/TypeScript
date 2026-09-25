@@ -40,9 +40,18 @@ let userSkills: Array<{
 ];
 
 // Function
-// returns number
-function mutliply(a: number, b: number): number {
-  return a * b;
+// function overload
+// Function overloads allow you to describe multiple valid call signatures for one function.
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a: number | string, b: number | string) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  } else if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  } else {
+    throw new Error("Arguments must have the same type");
+  }
 }
 
 // returns void
