@@ -20,3 +20,22 @@ let alienExists = doAliensExists ?? "NO";
 // Checks for 0, -0, 0n, NaN, false, empty string, null or undefined
 let doMartiansExists = undefined;
 let martiansExists = doMartiansExists || "Maybe";
+
+
+// Intersection Types => '&'
+// combines multiple types/interfaces into one
+// Can't work with primitive types and intersection with conflicting properties
+type Human = {
+    name:string
+}
+
+type Employee = {
+    id:string
+}
+
+const software_developer : Human & Employee = {
+    name:"Lakshay",
+    id:"84g76fyg"
+};
+
+
