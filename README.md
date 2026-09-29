@@ -9,4 +9,5 @@ TypeScript is a syntactic superset of JavaScript which adds static typing.
 3. Interfaces
 4. Generics
 5. Utility Types
-6. Decorators
+6. Decorators ( ECMAScript Decorators and Experimental Decorators )
+7. Modules and Namespaces
